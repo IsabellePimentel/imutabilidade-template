@@ -1,4 +1,6 @@
 import { EstilizacaoDoCarro } from "./styledCarro";
+import { Button } from "./styledGaragem";
+
 
 function Carro(props) {
   return (
@@ -9,6 +11,7 @@ function Carro(props) {
         <li>Ano: {props.ano}</li>
         <li>Flex: {props.flex}</li>
         <li>adicionadoPor: {props.adicionadoPor}</li>
+        <Button onClick={props.trocaCarro}>Mudar o carro</Button>
       </EstilizacaoDoCarro>
     </div>
   );
